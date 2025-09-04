@@ -1,0 +1,33 @@
+[build-system]
+requires = ['setuptools']
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name = 'faxanatools'
+version = '0.1'
+description = 'Explore the inner workings and craft new adventures for Faxanadu for NES.'
+authors = [
+    {name = 'Christian Hammond', email = 'chipx86@chipx86.com'}
+]
+license = 'MIT'
+readme = {file = 'README.rst', content-type = 'text/x-rst'}
+
+requires-python = '>=3.10'
+
+
+[project.urls]
+Homepage = 'https://github.com/chipx86/faxanatools'
+Repository = 'https://github.com/chipx86/faxanatools'
+
+
+[project.scripts]
+faxanatool = 'faxanatools.cli.main:main'
+
+
+[tool.setuptools]
+packages = ['faxanatools']
+
+
+[tool.setuptools.package-data]
+faxanatools = ['py.typed']
